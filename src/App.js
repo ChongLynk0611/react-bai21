@@ -1,25 +1,55 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import BookList from './components/BookList/BookList';
 
 function App() {
+  var books = [
+    {
+      url:"https://images-na.ssl-images-amazon.com/images/I/91U9VZ4UFNL.jpg",
+      title:"Con cá vàng",
+      description: "Ông lão bắt được con cá vàng"
+    },
+    {
+      url:"https://images-na.ssl-images-amazon.com/images/I/91U9VZ4UFNL.jpg",
+      title:"Con cá vàng",
+      description: "Ông lão bắt được con cá vàng"
+    },
+    {
+      url:"https://images-na.ssl-images-amazon.com/images/I/91U9VZ4UFNL.jpg",
+      title:"Con cá vàng",
+      description: "Ông lão bắt được con cá vàng"
+    },
+    {
+      url:"https://images-na.ssl-images-amazon.com/images/I/91U9VZ4UFNL.jpg",
+      title:"Con cá vàng",
+      description: "Ông lão bắt được con cá vàng"
+    },
+    {
+      url:"https://images-na.ssl-images-amazon.com/images/I/91U9VZ4UFNL.jpg",
+      title:"Con cá vàng",
+      description: "Ông lão bắt được con cá vàng"
+    },
+    {
+      url:"https://images-na.ssl-images-amazon.com/images/I/91U9VZ4UFNL.jpg",
+      title:"Con cá vàng",
+      description: "Ông lão bắt được con cá vàng"
+    },
+    {
+      url:"https://images-na.ssl-images-amazon.com/images/I/91U9VZ4UFNL.jpg",
+      title:"Con cá vàng",
+      description: "Ông lão bắt được con cá vàng"
+    },
+    {
+      url:"https://images-na.ssl-images-amazon.com/images/I/91U9VZ4UFNL.jpg",
+      title:"Con cá vàng",
+      description: "Ông lão bắt được con cá vàng"
+    },
+
+
+  ]
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BookList books={books}/>
   );
 }
 
